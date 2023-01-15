@@ -1,4 +1,4 @@
-function getButtonStyle(props) {
+function getBtnStyle(props) {
   let type = Boolean(props.type);
   let size = Boolean(props.size);
   if (type && size) {
@@ -17,7 +17,7 @@ function Button(props) {
     <button
       onClick={props.onClickHandler}
       disabled={props.disabled}
-      className={getButtonStyle(props)}
+      className={getBtnStyle(props)}
     >
       {' '}
       {props.label || 'Button'}
